@@ -1,0 +1,13 @@
+./data/
+experiment/
+src/__pycache__
+src/data/__pycache__
+src/loss/__pycache__
+src/model/__pycache__
+src/utils/__pycache__
+src/model/modules/__pycache__
+__pycache__
+log_base*
+*.png
+*.pt
+*.pth
