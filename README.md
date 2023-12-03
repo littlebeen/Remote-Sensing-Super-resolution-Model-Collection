@@ -3,13 +3,17 @@ The code of paper: GCRDN: Global Context-Driven Residual Dense Network for Remot
 https://ieeexplore.ieee.org/abstract/document/10115440
 
 
-@article{sui2023gcrdn,
-  title={GCRDN: Global Context-Driven Residual Dense Network for Remote Sensing Image Super-Resolution},
+```
+@ARTICLE{10115440,
   author={Sui, Jialu and Ma, Xianping and Zhang, Xiaokang and Pun, Man-On},
-  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
+  title={GCRDN: Global Context-Driven Residual Dense Network for Remote Sensing Image Superresolution}, 
   year={2023},
-  publisher={IEEE}
-}
+  volume={16},
+  number={},
+  pages={4457-4468},
+  doi={10.1109/JSTARS.2023.3273081}}
+```
 
 Training: python src/main.py
 
