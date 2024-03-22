@@ -8,7 +8,7 @@ The code of paper: [GCRDN: Global Context-Driven Residual Dense Network for Remo
 
 The project also contains serval methods except from gcrdn including rdn, nlsn, rcan, dbpn, edrn, esrt, swinir, transms. The code of gcrdn is presented at src/model/gcrdn/mymodel.py
 
-* RDN : [Residual Dense Network for Image Super-Resolution](https://openaccess.thecvf.com/content/ACCV2022/papers/Ding_Uncertainty-Based_Thin_Cloud_Removal_Network_via_Conditional_Variational_Autoencoders_ACCV_2022_paper.pdf](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Residual_Dense_Network_CVPR_2018_paper.pdf)
+* RDN : [Residual Dense Network for Image Super-Resolution](https://openaccess.thecvf.com/content_cvpr_2018/papers/Zhang_Residual_Dense_Network_CVPR_2018_paper.pdf)
 
 * NLSN : [Image Super-Resolution with Non-Local Sparse Attention](http://openaccess.thecvf.com/content/CVPR2021/papers/Mei_Image_Super-Resolution_With_Non-Local_Sparse_Attention_CVPR_2021_paper.pdf)
 
