@@ -31,6 +31,14 @@ The project also contains serval methods except from gcrdn including rdn, nlsn, 
 
 ```python test.py```
 
+**Dataset**
+
+The experimental datasets, OLI2MSI and Alsat, could be obtained from:
+
+* [OLI2MSI](https://github.com/wjwjww/OLI2MSI)
+
+* [Alsat](https://github.com/achrafdjerida/Alsat-2B)
+
 **Cite**
 
 Please cite this paper :)
