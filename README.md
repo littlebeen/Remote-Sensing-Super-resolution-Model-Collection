@@ -22,7 +22,7 @@ The project also contains serval methods except from gcrdn including rdn, nlsn, 
 
 * SwinIR : [SwinIR: Image Restoration Using Swin Transformer](https://openaccess.thecvf.com/content/ICCV2021W/AIM/papers/Liang_SwinIR_Image_Restoration_Using_Swin_Transformer_ICCVW_2021_paper.pdf)
 
-* Transms : [TranSMS: Transformers for Super-Resolution Calibration in Magnetic Particle Imaging]([https://arxiv.org/abs/2309.01377](https://arxiv.org/pdf/2111.02163.pdf))
+* TranSMS : [TranSMS: Transformers for Super-Resolution Calibration in Magnetic Particle Imaging](https://arxiv.org/pdf/2111.02163.pdf)
 
 **Test**
 
