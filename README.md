@@ -2,6 +2,8 @@
 
 The code of paper: [GCRDN: Global Context-Driven Residual Dense Network for Remote Sensing Image Super-Resolution](https://ieeexplore.ieee.org/abstract/document/10115440)
 
+# Usage
+
 **Train**
 
 ```python src/main.py ```
@@ -47,7 +49,7 @@ cuda==11.7
 
 python==3.10.6
 
-**Cite**
+# Cite
 
 Please cite this paper :)
 ```
