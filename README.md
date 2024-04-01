@@ -39,6 +39,12 @@ The experimental datasets, OLI2MSI and Alsat, could be obtained from:
 
 * [Alsat](https://github.com/achrafdjerida/Alsat-2B)
 
+**Env**
+
+pytorch==1.13.0
+cuda==11.7
+python==3.10.6
+
 **Cite**
 
 Please cite this paper :)
