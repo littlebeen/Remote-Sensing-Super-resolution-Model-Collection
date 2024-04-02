@@ -35,6 +35,8 @@ def get_model(name,args):
     if name == 'rrdb':
         from .rrdb.rrdb import RRDBNet as M
         return M()
+    if name == 'mambair':
+        from .mambair.mambair import MambaIR as M
     return M(args)
 
 

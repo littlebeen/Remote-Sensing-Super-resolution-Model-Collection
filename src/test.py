@@ -15,7 +15,7 @@ torch.manual_seed(args.seed)
 checkpoint = utility.checkpoint(args) 
 
 
-#os.environ["CUDA_VISIBLE_DEVICES"] = "1" #在卡2调试
+#os.environ["CUDA_VISIBLE_DEVICES"] = "1" 
 def main():
     global model
     if checkpoint.ok:                  

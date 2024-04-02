@@ -19,27 +19,27 @@ parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
 parser.add_argument('--local_rank',type=int, default=0)
 # Data specifications
-parser.add_argument('--dir_data', type=str, default='../../data',  #数据集位置
+parser.add_argument('--dir_data', type=str, default='../../data',  #data path
                     help='dataset directory')
 parser.add_argument('--dir_demo', type=str, default='../Demo',
                     help='demo image directory')
-parser.add_argument('--data_train', type=str, default='Potsdam',  ###################dataset加载模型
+parser.add_argument('--data_train', type=str, default='ALSAT',  #dataset
                     help='train dataset name')
-parser.add_argument('--data_train_dir', type=str, default='Potsdam',  #DIV2K  OLI2MSI ALSAT Vaihingen Potsdam
+parser.add_argument('--data_train_dir', type=str, default='ALSAT',  #DIV2K  OLI2MSI ALSAT Vaihingen Potsdam
                     help='test dataset name')
 parser.add_argument('--data_range', type=str, default='1-800/801-810',
                     help='train/test data range')
 parser.add_argument('--ext', type=str, default='sep',
                     help='dataset file extension')
-parser.add_argument('--scale', type=str, default='4',  #######换数据集要改 3 4
+parser.add_argument('--scale', type=str, default='4',  # OLI2MSI: 3, ALSAT Vaihingen Potsdam: 4
                     help='super resolution scale')
-parser.add_argument('--patch_size', type=int, default=128,  ######换数据集要改96 128
+parser.add_argument('--patch_size', type=int, default=128,  #OLI2MSI:96, ALSAT Vaihingen Potsdam: 128
                     help='output patch size')
 parser.add_argument('--rgb_range', type=int, default=1,
                     help='maximum value of RGB')
 parser.add_argument('--n_colors', type=int, default=3,
                     help='number of color channels to use')
-parser.add_argument('--chunk_size',type=int,default=25,  #25 Alsat 144 OLI2MSI
+parser.add_argument('--chunk_size',type=int,default=25, 
                     help='attention bucket size')
 parser.add_argument('--n_hashes',type=int,default=4,
                     help='number of hash rounds')
@@ -57,7 +57,7 @@ parser.add_argument('--discriminator', default='discriminator_vgg_128',
 
 parser.add_argument('--act', type=str, default='relu',
                     help='activation function')
-parser.add_argument('--pre_train', type=str, default='.',  #../model/model_best.pt
+parser.add_argument('--pre_train', type=str, default='.',  #test change:'../pre_train/model_best.pt'
                     help='pre-trained model directory')
 parser.add_argument('--extend', type=str, default='.',
                     help='pre-trained model directory')
@@ -96,7 +96,7 @@ parser.add_argument('--reset', action='store_true',
                     help='reset the training')
 parser.add_argument('--test_every', type=int, default=500,
                     help='do test per every N batches')
-parser.add_argument('--epochs', type=int, default=50,    ###################epoch  50
+parser.add_argument('--epochs', type=int, default=50,    #epoch
                     help='number of epochs to train')
 parser.add_argument('--batch_size', type=int, default=16,  #
                     help='input batch size for training')
@@ -112,7 +112,7 @@ parser.add_argument('--gan_k', type=int, default=1,
 # Optimization specifications
 parser.add_argument('--lr', type=float, default=1e-4,
                     help='learning rate')
-parser.add_argument('--decay', type=str, default='10-20-30',  #学习率下降
+parser.add_argument('--decay', type=str, default='10-20-30',
                     help='learning rate decay type')
 parser.add_argument('--gamma', type=float, default=0.5,
                     help='learning rate decay factor for step decay')

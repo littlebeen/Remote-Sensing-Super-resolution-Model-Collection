@@ -31,6 +31,7 @@ class Trainer():
         #self.FID_c=FID(len(loader.loader_test))
         self.LPIPS_c=LPIPS()
         #self.IS_c=IS(len(loader.loader_test))
+
     def testtrain(self, is_train=True):
         best_psnr_index= 0
         best_ssim_index=0
@@ -53,14 +54,15 @@ class Trainer():
                 best_psnr_index=e
             if ssim>all_SSIM[best_ssim_index]:
                 best_ssim_index=e
-        fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(13,7))
-        axes.plot(all_PSNR, 'k--')
-        plt.savefig(self.args.model+'_PSNR.png')
-        fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(13,7))
-        axes.plot(all_SSIM, 'k--')
-        plt.savefig(self.args.model+'_SSIM.png')
-        self.ckp.write_log('Best PSNR epoch{}:PSNR:{:.3f} SSIM:{:.5f}'.format(best_psnr_index+1,all_PSNR[best_psnr_index],all_SSIM[best_psnr_index]))
-        self.ckp.write_log('Best SSIM epoch{}:PSNR:{:.3f} SSIM:{:.5f}'.format(best_ssim_index+1,all_PSNR[best_ssim_index],all_SSIM[best_ssim_index]))
+        if(is_train):
+            fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(13,7))
+            axes.plot(all_PSNR, 'k--')
+            plt.savefig(self.args.model+'_PSNR.png')
+            fig, axes = plt.subplots(nrows=1, ncols=1, figsize=(13,7))
+            axes.plot(all_SSIM, 'k--')
+            plt.savefig(self.args.model+'_SSIM.png')
+            self.ckp.write_log('Best PSNR epoch{}:PSNR:{:.3f} SSIM:{:.5f}'.format(best_psnr_index+1,all_PSNR[best_psnr_index],all_SSIM[best_psnr_index]))
+            self.ckp.write_log('Best SSIM epoch{}:PSNR:{:.3f} SSIM:{:.5f}'.format(best_ssim_index+1,all_PSNR[best_ssim_index],all_SSIM[best_ssim_index]))
 
     def train(self):
         self.loss.step()
