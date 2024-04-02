@@ -6,7 +6,9 @@ The code of paper: [GCRDN: Global Context-Driven Residual Dense Network for Remo
 
 **Train**
 
-```python src/main.py ```
+You could change all the setting in the option.py through form of '--xxx xxx' during training and testing such as:
+
+```python src/main.py --model your_model_name --save your_save_dir_name```
 
 The project also contains serval methods except from gcrdn including rdn, nlsn, rcan, dbpn, edrn, esrt, swinir, transms. The code of gcrdn is presented at src/model/gcrdn/mymodel.py
 
@@ -28,10 +30,10 @@ The project also contains serval methods except from gcrdn including rdn, nlsn, 
 
 **Test**
 
-1. Put pre-trained model into 'model'
-2. Change the model name in the option.py
+1. Put pre-trained model into 'pre_train'
+2. Change the model name in the option.py or use '--model your_model_name' :
 
-```python test.py```
+```python src/test.py --model your_model_name --save your_save_dir_name```
 
 **Dataset**
 
@@ -70,3 +72,4 @@ Please cite this paper :)
   year={2024}
 }
 ```
+If you have any questions, be free to contact me!
