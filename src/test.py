@@ -21,6 +21,7 @@ def main():
     if checkpoint.ok:                  
         loader = data.Data(args)
         _model = model.Model(args, checkpoint)
+        args.test_only =True
         # for name, parms in _model.named_parameters():
         #     if 'layers.0.residual_group.blocks.0.attn.relative_position_bias_table' in name:
         #         print(parms)

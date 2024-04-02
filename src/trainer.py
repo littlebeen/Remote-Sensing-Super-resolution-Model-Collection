@@ -42,7 +42,7 @@ class Trainer():
                 self.train()
                 psnr,ssim=self.testnew(all_PSNR[best_psnr_index])
             else:
-                psnr,ssim=self.testsave(all_PSNR[best_psnr_index])
+                psnr,ssim=self.testnew(all_PSNR[best_psnr_index])
                 break
             if(e==0):
                 all_PSNR[0]=psnr
