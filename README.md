@@ -65,6 +65,17 @@ Please cite this paper :)
   pages={4457-4468},
   doi={10.1109/JSTARS.2023.3273081}}
 
+@article{sui2024denoising,
+  title={Denoising Diffusion Probabilistic Model with Adversarial Learning for Remote Sensing Super-Resolution},
+  author={Sui, Jialu and Wu, Qianqian and Pun, Man-On},
+  journal={Remote Sensing},
+  volume={16},
+  number={7},
+  pages={1219},
+  year={2024},
+  publisher={MDPI}
+}
+
 @article{sui2024adaptive,
   title={Adaptive Semantic-Enhanced Denoising Diffusion Probabilistic Model for Remote Sensing Image Super-Resolution},
   author={Sui, Jialu and Ma, Xianping and Zhang, Xiaokang and Pun, Man-On},
