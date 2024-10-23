@@ -35,6 +35,8 @@ The project also contains serval methods except from gcrdn including rdn, nlsn, 
 
 ```python src/test.py --model your_model_name --save your_save_dir_name```
 
+My pretrained files on OLI2MSI of all models mentioned above are uploaded which could be gained from [https://pan.baidu.com/s/1Zw8Vww-dLX_sRHYVdtQBww](https://pan.baidu.com/s/1Zw8Vww-dLX_sRHYVdtQBww) code: been
+
 **Dataset**
 
 The experimental datasets, OLI2MSI and Alsat, could be obtained from:
