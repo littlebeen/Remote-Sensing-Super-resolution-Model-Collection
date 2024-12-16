@@ -45,6 +45,8 @@ The experimental datasets, OLI2MSI and Alsat, could be obtained from:
 
 * [Alsat](https://github.com/achrafdjerida/Alsat-2B)
 
+I make few manipulation based on them. The processed datasets could be downloaded at [https://pan.baidu.com/s/1l2CXgEJGVBGcOonUBnOLfg](https://pan.baidu.com/s/1l2CXgEJGVBGcOonUBnOLfg) code bean.
+
 **Env**
 
 pytorch==1.13.0
